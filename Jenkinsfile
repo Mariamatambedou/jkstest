@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clean') {
-            steps {
-                // Supprime le répertoire de destination s'il existe déjà
-                bat 'rmdir /s /q jkstest'
-            }
-        }
 
         stage('Clone') {
             steps {
